@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    function findStarName(name) {
+        var result = "";
+        // var index = 0;
+        for (var i = 0; i < arr1.length; i++) {
+            if (name == arr1[i]) {
+                result = arr2[i];
+            }
+        }
+        if (result == '') {
+            return "Không có ngôi sao nào trong danh sách!";
+        }
+        return result;
+    }
+
+    var arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    var arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    var name = prompt("Nhập vào tên 1 ngôi sao: ");
+    var result = findStarName(name);
+    alert(result);
+
+</script>
+</body>
+</html>
